@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory-Card</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+
+	
+</head>
+<body>
+<div class='snow-container'>
+	<div class='snow foreground'></div>
+	<div class='snow foreground layered'></div>
+	<div class='snow middleground'></div>
+	<div class='snow middleground layered'></div>
+	<div class='snow background'></div>
+	<div class='snow background layered'></div>
+</div>
+
+<div class="startgame">
+	<div class="dialog">
+		<h1>Memory card</h1>
+		<br/>
+		<button class="button" onclick="startGame()">BEGIN</button>
+	</div>
+</div>
+	<div class="wrap">
+		<div id="progressBar" class="big-green" style="display: none">
+			<div></div>
+		</div>
+		<div class="contenter"></div>
+	</div>
+<div class="endgame"  style="display: none">
+	<div  id="lose" style="display: none">
+		<h1>You are loser!Try again,now.</h1>
+	<h1>
+		<audio id="lose-sound">
+			<source src="audio/Defeat.mp3" type="audio/mpeg">
+		</audio>
+	<button class="button" onclick="loadGame()">Play again</button>
+	</h1>
+	</div>
+
+	<div  id="win" style="display: none">
+		<audio id="win-sound">
+			<source src="audio/Victory.mp3" type="audio/mpeg">
+		</audio>
+	<h1>You  won!</h1><br/>
+		<button class="button" onclick="loadGame()"><h2>Làm phát nữa</h2></button>
+
+	</div>
+
+</div>
+
+
+
+<div class="audio">
+	<audio id="bg-music" >
+		<source src="audio/A New Dawn.mp3" type="audio/mpeg">
+	</audio>
+
+	<audio id="click-music" >
+		<source src="audio/card.wav" type="audio/wav">
+	</audio>
+
+	<audio id="click-right" >
+		<source src="audio/rightsound.mp3" type="audio/wav">
+	</audio>
+	<audio id="click-wrong" >
+		<source src="audio/wrongsound.mp3" type="audio/wav">
+	</audio>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.js">
+		
+	</script>
+<script type="text/javascript" src="jquery.magnific-popup.js"></script>
+</body>
+
+
+</html>
