@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box; 
+}
+body{
+	background-color: #e5e5e5;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+h1{
+	margin: 30px 0 10px 0;
+	color: #404040;
+	font-size: 24px;
+}
+#logo img{
+	margin-top: 20px;
+	width: 100%;
+	max-height: 300px;
+	
+}
+
+#main-menu{
+	text-align: center;
+	position: absolute;
+	background-color: #ffffff;
+	padding-bottom: 15px
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	top: 20px;
+    left: 8px;
+    max-height: 300px;
+}
+#main-menu a{
+	display: block;
+	font-weight: 26px;
+	padding: 30px;
+	font-weight: bold;
+	color: #737373;;
+	text-decoration: none;
+	padding-bottom: 30px;
+}
+#main-content{
+	position: relative;
+}
+
+#/*main-menu >a:first-child{
+	position: absolute;
+	padding: 4px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	top: -137px;
+    left: 64px;
+}*/
+#main-menu>a:first-child>img{
+	max-width: 160px;
+	border-radius: 50%;
+
+}
+
+#wrap{
+	max-width: 1000px;
+	margin: auto;
+}
+#footer p{
+	margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5;
+	text-align: center;
+	font-family: sans-serif;
+}
+#chat {
+	position: fixed;
+	right: 50px;
+	bottom: 30px;
+	border-radius: 50%;
+}
+#chat img{
+	width: 40px;
+}
+#backtotop {
+	position: fixed;
+	right: 1256px;
+	bottom: 28px;
+	
+}
+#backtotop img{
+	border-radius: 40%;
+}

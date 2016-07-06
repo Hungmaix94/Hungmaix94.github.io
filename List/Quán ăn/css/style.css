@@ -1,0 +1,43 @@
+#main-menu ul{
+	list-style: none;
+	font-family: Arial, san-serif;
+	font-size: 15px;
+	padding: 0;
+}
+#main-menu ul li{
+	float: left;
+	position: relative;
+}
+#main-menu ul a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	padding: 10px 30px;
+	background: #000;
+}
+#main-menu ul a:hover{
+	background: #c5c5c5;
+}
+
+/* css menu cap2 */
+
+
+#main-menu li ul a{
+	background: #444;
+
+}
+#main-menu li ul{
+	position: absolute;
+	display: none;
+	width: 200px;
+}
+#main-menu li:hover ul{
+	display:block;
+}
+#sub-menu li ul{
+	display: none;
+}
+#sub-menu li:hover ul{
+	display: block;
+}
