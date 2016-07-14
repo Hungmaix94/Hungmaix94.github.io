@@ -7,13 +7,14 @@
     <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
     <link href="include/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style-sanpham.css"/>
     <!--<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>-->
-    <link rel="stylesheet" href="include/ninja-slider.css" type="text/css"/>
-    <link rel="stylesheet" href="include/thumbnail-slider.css" type="text/css"/>
+    <!--<link rel="stylesheet" href="include/ninja-slider.css" type="text/css"/>-->
+    <!--<link rel="stylesheet" href="include/thumbnail-slider.css" type="text/css"/>-->
+    <link rel="stylesheet" href="include/magnific-popup.css" type="text/css"/>
     <link href="include/jquery.smartmenus.bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="include/magnific-popup.css" type="text/css"/>
-
 </head>
 <body>
 <header>
@@ -50,7 +51,6 @@
                 </div>
             </div>
 
-
         </div>
     </div>
     <!--main menu-->
@@ -78,12 +78,12 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="index.html#sanphamnoibat">SẢN PHẨM NỔI BẬT <i class="fa fa-star-o"
-                                                                                 style="color: yellow"
-                                                                                 aria-hidden="true"></i></a>
+                                                                                           style="color: yellow"
+                                                                                           aria-hidden="true"></i></a>
                                 </li>
                                 <li>
                                     <a href="index.html#sanphamkhuyenmai">SẢN PHẨM KHUYẾN MẠI <i class="fa fa-usd"
-                                                                                       aria-hidden="true"></i></a>
+                                                                                                 aria-hidden="true"></i></a>
                                 </li>
                                 <li>
                                     <a href="#maybaymohinh">MÁY BAY MÔ HÌNH</a>
@@ -99,9 +99,14 @@
                         <li><a href="gioithieu.html">Giới thiệu</a></li>
                         <li><a href="huongdanmuahang.html">Hướng dẫn mua hàng</a></li>
                     </ul>
-                    <div class="shopping-cart" style="float: right;padding-right: 16.666666%">
-                        <a href="#"><i  style="color: yellow" class="fa fa-3x fa-shopping-cart" aria-hidden="true"></i></a>
+                    <div class="shopping-cart">
+                        <a href="giohang.html"><i style="color: yellow" class="fa fa-3x fa-shopping-cart"
+                                                  aria-hidden="true"> <span
+                                style="text-transform: uppercase;font-size: 25px">Giỏ hàng</span></i></a>
                     </div>
+                    <!--<div class="quality-cart">-->
+                        <!--<span>1</span>-->
+                    <!--</div>-->
                 </div>
 
             </div>
@@ -111,734 +116,933 @@
 
 <!--content-->
 <div id="content">
-   <div class="main-content">
-       <div class="row">
-           <div class="col-md-3 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-11 col-xs-offset-1">
-               <div class="menu-sidebar">
+    <div class="main-content">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                <div class="menu-sidebar">
                     <div>
                         <span>Phân loại theo tuổi:</span>
                     </div>
-                        <ul class="box-menu">
-                            <li>
-                                <a href="#">2-6 tuổi</a>
-                            </li>
-                            <li>
-                                <a href="#">7-12 tuổi</a>
-                            </li>
-                            <li>
-                                <a href="#">13-16 tuổi</a>
-                            </li>
+                    <ul class="box-menu">
+                        <li>
+                            <a href="#2-6">2-6 tuổi</a>
+                        </li>
+                        <li>
+                            <a href="#7-12">7-12 tuổi</a>
+                        </li>
+                        <li>
+                            <a href="#13-16">13-16 tuổi</a>
+                        </li>
 
-                        </ul>
+                    </ul>
                     <div>
                         <span>Phân loại theo giới tính</span>
                     </div>
-                        <ul class="box-menu">
-                            <li>
-                                <a href="#">Nam</a>
-                            </li>
-                            <li>
-                                <a href="#">Nữ</a>
-                            </li>
-                        </ul>
+                    <ul class="box-menu">
+                        <li>
+                            <a href="#nam">Nam</a>
+                        </li>
+                        <li>
+                            <a href="#nu">Nữ</a>
+                        </li>
+                    </ul>
 
-                   <div >
-                       <a href="#maybaymohinh"><span>MÁY BAY MÔ HÌNH</span></a>
-                   </div>
-                   <ul class="box-menu">
-                       <li>
-                           <a href="#">Drone&Flycam</a>
-                       </li>
-                       <li>
-                           <a href="#">Máy bay trực thăng</a>
-                       </li>
-                       <li>
-                           <a href="#">Linh kiện máy bay</a>
-                       </li>
-                   </ul>
-                   <div id="xemohinh">
-                       <a href="#xemohinh.html"><span>XE MÔ HÌNH</span></a>
-                   </div>
-                   <ul class="box-menu">
-                       <li>
-                           <a href="">Xe tank</a>
-                       </li>
-                       <li>
-                           <a href="">Ô tô</a>
-                       </li>
-                       <li>
-                           <a href="">Linh kiện</a>
-                       </li>
-                   </ul>
-                   <div id="canomohinh">
-                       <a href="#canomohinh.html"><span>TÀU CANO MÔ HÌNH</span></a>
-                   </div>
-                   <ul class="box-menu">
-                       <li>
-                           <a href="">Cano</a>
-                       </li>
-                       <li>
-                           <a href="">Linh kiện Cano</a>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-           <div class="col-md-7 col-md-offset-0 col-sm-11 col-sm-offset-1  col-xs-11 col-xs-offset-1 ">
-               <div id="sanphamnoibat">
-                   <div class="title-sanpham">
-                       <a href="">
-                            Sản phẩm nổi bật
-                       </a>
-                   </div>
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
-                           <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive">
-                       </a>
+                    <div>
+                        <a href="#maybaymohinh"><span>MÁY BAY MÔ HÌNH</span></a>
+                    </div>
+                    <ul class="box-menu">
+                        <li>
+                            <a href="#droneflycam">Drone&Flycam</a>
+                        </li>
+                        <li>
+                            <a href="#helicopers">Máy bay trực thăng</a>
+                        </li>
+                        <li>
+                            <a href="#spare_parts">Linh kiện máy bay</a>
+                        </li>
+                    </ul>
+                    <div >
+                        <a href="#xemohinh.html"><span>XE MÔ HÌNH</span></a>
+                    </div>
+                    <ul class="box-menu">
+                        <li>
+                            <a href="#xetank">Xe tank</a>
+                        </li>
+                        <li>
+                            <a href="#xeoto">Ô tô</a>
+                        </li>
+                        <li>
+                            <a href="#linkiienoto">Linh kiện</a>
+                        </li>
+                    </ul>
+                    <div >
+                        <a href="#canomohinh.html"><span>TÀU CANO MÔ HÌNH</span></a>
+                    </div>
+                    <ul class="box-menu">
+                        <li>
+                            <a href="#cano">Cano</a>
+                        </li>
+                        <li>
+                            <a href="#cano_sparepart">Linh kiện Cano</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1  col-xs-10 col-xs-offset-1 ">
+                <div id="sanphamnoibat">
+                    <div class="row">
+                        <div class="title-sanpham">
+                            <a href="#">
+                                <span>Sản phẩm nổi bật</span>
+                            </a>
+                            <!--<span class="action">-->
+                            <!--<a href="danhsachsanpham/sanphamnoibat.html">Xem thêm</a>-->
+                            <!--</span>-->
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <a href="chitietsanpham/Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
+                                    <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="info-item">
+                                    <div class="item-title">
+                                        <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3"
+                                           title="vua địa hình-eadge-3">
+                                            <span>vua địa hình-eadge-3</span>
+                                        </a>
+
+                                        <div class="item-detail">
+                                            <h4 style="color: red">2.450.000 <sup>đ</sup></h4>
+                                            <p>Tính năng nổi bật:</p>
+                                       <span>
+                                           Sóng 2.4G cho tầnm điều khiển ~100m.
+                                           Không trùng sóng,nhiễu sóng.
+                                           Thiết kế chắc chắn,
+                                           Hầm hố Motor 390 bền bỉ, tốc độ cao.
+                                       </span>
+                                        </div>
+
+                                        <div class="add_to-cart">
+                                            <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <a href="chitietsanpham/FT011.html#FT011-Canodieukhientuxa">
+                                    <img src="img/sanphamnoibat/FT011-Canodieukhientuxa.jpg" alt=""
+                                         class="img-responsive"/>
+                                </a>
+                                <div class="info-item">
+                                    <div class="item-title">
+                                        <a href="chitietsanpham/FT011.html#FT011-Canodieukhientuxa"
+                                           title="/FT011-Canodieukhientuxa">
+                                            <span>  FT011-Cano Điều khiển từ xa</span>
+                                        </a>
+                                        <div class="item-detail">
+                                            <h4 style="color: red">3.100.000 <sup>đ</sup></h4>
+                                            <span>Mới đây, Syma vừa cho ra mắt một loạt các sản phẩm ứng dụng những công nghệ mới nhất của hãng.
+                                                Một sản phẩm nổi bật trong số đó chính là chiếc Syma X8HW - bản nâng cấp đặc biệt của chiếc Syma X8W ra mắt trước đó. Tính năng nổi bật: ...
+                                            </span>
+                                        </div>
+                                        <div class="add_to-cart">
+                                            <span>Mua Ngay</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="item">
+                                <a href="chitietsanpham/van-truot-surfboard-rc.html#van-truot-surfboard-rc">
+                                    <img src="img/sanphamnoibat/van-truot-surfboard-rc-vuamohinh-5.jpg" alt=""
+                                         class="img-responsive"/>
+                                </a>
 
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   vua địa hình-eadge-3
-                               </a>
+                                <div class="info-item">
+                                    <div class="item-title">
+                                        <a href="chitietsanpham/van-truot-surfboard-rc.html#van-truot-surfboard-rc"
+                                           title="van-truot-surfboard-rc">
+                                            <span> Ván trượt điều khiển từ xa Surfboard</span>
+                                        </a>
+                                        <h4 style="color: red; font-size: 20px">1.200.000 <sup>đ</sup></h4>
+                                        <div class="item-detail">
+                                           <span>
+                                                Xin giới thiệu mẫu đồ chơi hiện đang hot nhất hè 2016 vừa mới ra mắt
+                                              Ván trượt điều khiển từ xa Surfboard.
+                                             Sản phẩm của hãng Great Wall tính hợp những tính năng vô cùng hữu ích
+                                              như chống nước, tự động lật, 2 mức tốc độ ... giúp người chơi có thể dễ dàng điều khiển, vượt qua những con sóng lớn,
+                                              trải nghiệm cảm giác vô cùng thích thú. Thông số và tính...
+                                           </span>
+                                            </li>
+                                        </div>
 
-                               <br>
-                               <div class="item-detail">
-                                       <h4 style="color: red">2.450.000 <sup>đ</sup> </h4>
-                                       <p>Tính năng nổi bật:</p>
-                                          <ul style="list-style:none">
-                                              <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                              <li>Không trùng sóng,nhiễu sóng.</li>
-                                              <li>Thiết kế chắc chắn,</li>
-                                              <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                          </ul>
-                                      </li>
-                               </div>
-
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="item">
-                       <a href="FT011.html#FT011-Canodieukhientuxa">
-                           <img src="img/sanphamnoibat/FT011-Canodieukhientuxa.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#FT011-Canodieukhientuxa" title="/FT011-Canodieukhientuxa">
-                                   FT011-Cano Điều khiển từ xa
-                               </a>
-                               <br>
-                               <span class="item-detail">
-                                   Mới đây, Syma vừa cho ra mắt một loạt các sản phẩm ứng dụng những công nghệ mới nhất của hãng.
-                               </span>
-                               <br>
-                               <span class="item-detail">
-                                   Một sản phẩm nổi bật trong số đó chính là chiếc Syma X8HW - bản nâng cấp đặc biệt của chiếc Syma X8W ra mắt trước đó. Tính năng nổi bật: ...
-                               </span>
+                                        <div class="add_to-cart">
+                                            <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="item">
+                                <a href="chitietsanpham/tauthuysanbay.html">
+                                    <img src="img/sanphamkhuyenmai/tauthuysanbay.jpg" alt="" class="img-responsive"/>
+                                </a>
+                                <div class="discount-item">
+                                    <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                               10%
+                           </span>
+                                </div>
 
 
-                               <div class="add_to-cart">
-                                   <span>Mua Ngay</span>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="item">
-                       <a href="van-truot-surfboard-rc.html#van-truot-surfboard-rc">
-                           <img src="img/sanphamnoibat/van-truot-surfboard-rc-vuamohinh-5.jpg" alt="" class="img-responsive"/>
-                       </a>
+                                <div class="info-item">
+                                    <div class="item-title">
+                                        <a href="chitietsanpham/tauthuysanbay.html" title="vua địa hình-eadge-3">
+                                            <span> Tàu thủy sân bay</span>
+                                        </a>
+                                        <h4 style="color: red;font-size: 20px;">1.500.000<sup>đ</sup><span
+                                                style="text-decoration: line-through;color: grey;font-size: 17px;">1.670.000 </span><sup
+                                                style="color: grey;">đ</sup></h4>
+                                        <div class="item-detail">
+                                            <p>Tính năng nổi bật:</p>
+                                            <span style="list-style:none;">
+                                                Sóng 2.4G cho tầnm điều khiển ~100m.
+                                             Không trùng sóng,nhiễu sóng.
+                                              Thiết kế chắc chắn,
+                                               Hầm hố Motor 390 bền bỉ, tốc độ cao.
+                                            </span>
+                                            </li>
+                                        </div>
 
+                                        <div class="add_to-cart">
+                                            <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sanphamkhuyenmai-->
+        <div id="sanphamkhuyenmai">
+            <div class="title-sanpham">
+                <a href="">
+                    Sản phẩm khuyến mại
+                </a>
+            </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="van-truot-surfboard-rc.html#van-truot-surfboard-rc" title="van-truot-surfboard-rc">
-                                   Ván trượt điều khiển từ xa Surfboard
-                               </a>
-
-                               <br>
-                               <div class="item-detail">
-                                   <h4 style="color: red">1.200.000 <sup>đ</sup> </h4>
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li> Xin giới thiệu mẫu đồ chơi hiện đang hot nhất hè 2016 vừa mới ra mắt</li>
-                                       <li>Ván trượt điều khiển từ xa Surfboard.</li>
-                                       <li>Sản phẩm của hãng Great Wall tính hợp những tính năng vô cùng hữu ích</li>
-                                       <li>như chống nước, tự động lật, 2 mức tốc độ ... giúp người chơi có thể dễ dàng điều khiển, vượt qua những con sóng lớn,</li>
-                                       <li>trải nghiệm cảm giác vô cùng thích thú. Thông số và tính...</li>
-                                   </ul>
-                                   </li>
-                               </div>
-
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <!--sanphamkhuyenmai-->
-       <div id="sanphamkhuyenmai">
-           <h3 style="color: red;text-transform: uppercase;padding-bottom: 20px">Sản phẩm khuyến mại</h3>
-           <div class="row" >
-               <div class="col-md-4">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
-                           <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="chitietsanpham/Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
+                            <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                15%
                            </span>
-                       </div>
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   vua địa hình-eadge-3
-                               </a>
-                               <h4 style="color: red;font-size: 20px;">2.450.000 <sup>đ</sup><span style="text-decoration: line-through;color: grey;font-size: 17px;">3.000.000 </span><sup style="color: grey;">đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                       <li>Không trùng sóng,nhiễu sóng.</li>
-                                       <li>Thiết kế chắc chắn,</li>
-                                       <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                   </ul>
-                                   </li>
-                               </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3"
+                                   title="vua địa hình-eadge-3">
+                                    vua địa hình-eadge-3
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2.450.000 <sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">3.000.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none">
+                                        <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
+                                        <li>Không trùng sóng,nhiễu sóng.</li>
+                                        <li>Thiết kế chắc chắn,</li>
+                                        <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
+                                    </ul>
+                                    </li>
+                                </div>
 
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 ">
-                   <div class="item">
-                       <a href="SymaX8HW.html">
-                           <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html">
+                            <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                10%
                            </span>
-                       </div>
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="SymaX8HW.html" title="">
-                                   Syma X8HW-Drone Flycam
-                               </a>
-                               <h4 style="color: red;font-size: 20px;">2.250.000 <sup>đ</sup><span style="text-decoration: line-through;color: grey;font-size: 17px;">2.550.000 </span><sup style="color: grey;">đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
-                                       <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.</li>
-                                   </ul>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/SymaX8HW.html" title="">
+                                    <span>Syma X8HW-Drone Flycam</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2.250.000 <sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">2.550.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none">
+                                        <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
+                                        <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.
+                                        </li>
+                                    </ul>
 
-                               </div>
+                                </div>
 
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 ">
-                   <div class="item">
-                       <a href="SymaX8HW.html#syma-x5hw-wifi">
-                           <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html#syma-x5hw-wifi">
+                            <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                12%
                            </span>
-                       </div>
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="SymaX8HW.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
-                                   syma-x5hw-wifi
-                               </a>
-                               <h4 style="color: red;font-size: 20px;">1.400.000<sup>đ</sup><span style="text-decoration: line-through;color: grey;font-size: 17px;">1.950.000 </span><sup style="color: grey;">đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
-                                       giúp người chơi biết được máy bay đang ở đâu.</li>
-                                       <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
-                                   </ul>
-                               </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/SymaX8HW.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
+                                    <span>syma-x5hw-wifi</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">1.400.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">1.950.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none;">
+                                        <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
+                                            giúp người chơi biết được máy bay đang ở đâu.
+                                        </li>
+                                        <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
+                                    </ul>
+                                </div>
 
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="row" >
-               <div class="col-md-4">
-                   <div class="item">
-                       <a href="tauthuysanbay.html">
-                           <img src="img/sanphamkhuyenmai/tauthuysanbay.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="chitietsanpham/tauthuysanbay.html">
+                            <img src="img/sanphamkhuyenmai/tauthuysanbay.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                10%
                            </span>
-                       </div>
+                        </div>
 
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="tauthuysanbay.html" title="vua địa hình-eadge-3">
-                                   Tàu thủy sân bay
-                               </a>
-                               <h4 style="color: red;font-size: 20px;">1.500.000<sup>đ</sup><span style="text-decoration: line-through;color: grey;font-size: 17px;">1.670.000 </span><sup style="color: grey;">đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                       <li>Không trùng sóng,nhiễu sóng.</li>
-                                       <li>Thiết kế chắc chắn,</li>
-                                       <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                   </ul>
-                                   </li>
-                               </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/tauthuysanbay.html" title="vua địa hình-eadge-3">
+                                    Tàu thủy sân bay
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">1.500.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">1.670.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none;">
+                                        <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
+                                        <li>Không trùng sóng,nhiễu sóng.</li>
+                                        <li>Thiết kế chắc chắn,</li>
+                                        <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
+                                    </ul>
+                                    </li>
+                                </div>
 
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 ">
-                   <div class="item">
-                       <a href=".html#Syma X8HW">
-                           <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
-                           <span class="discount-value" style="color: white">
-                               10%
-                           </span>
-                       </div>
-
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   Syma X8HW-Drone Flycam
-                               </a>
-
-                               <h4 style="color: red"> <span style="text-decoration: line-through;color: black;">2.550.000 </span><sup style="color: black">đ</sup> 2.250.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
-                                       <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.</li>
-                                   </ul>
-
-                               </div>
-
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 ">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi">
-                           <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
-                           <span class="discount-value" style="color: white">
-                               12%
-                           </span>
-                       </div>
-
-
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
-                                   syma-x5hw-wifi
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">1.950.000 </span><sup style="color: black">đ</sup>1.400.000<sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
-                                           giúp người chơi biết được máy bay đang ở đâu.</li>
-                                       <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
-                                   </ul>
-                               </div>
-
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-       <!--maybaymohinh-->
-       <div id="maybaymohinh">
-           <h3 style="color: red;text-transform: uppercase;padding-bottom: 20px">Máy bay mô hình</h3>
-           <h4 style="color: black;text-transform: uppercase;padding-bottom: 20px">drone&flycam</h4>
-           <div class="row"  >
-               <div class="col-md-4" id="droneflycam">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
-                           <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html">
+                            <img src="img/jjrc-h5p-rc-vuamohinh.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                15%
                            </span>
-                       </div>
-                       <!--<div class="ribbon">-->
-                       <!--<span  class="item-price">Giá:2.450.000<sup>Đ</sup></span>-->
-                       <!--</div>-->
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   vua địa hình-eadge-3
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">3.000.000 </span><sup style="color: black">đ</sup>2.450.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                       <li>Không trùng sóng,nhiễu sóng.</li>
-                                       <li>Thiết kế chắc chắn,</li>
-                                       <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                   </ul>
-                                   </li>
-                               </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/SymaX8HW.html"
+                                   title="vua địa hình-eadge-3">
+                                    JJRC H5P Drone
+                                </a>
 
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4" id="helicopers">
-                   <div class="item">
-                       <a href=".html#Syma X8HW">
-                           <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <h4 style="color: red;font-size: 20px;">1.300.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">1.550.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                   <span>Máy bay Drone JJRC H5P là bản nâng cấp đặc biệt từ H5C Drone , với pin dung lượng cao 1100mAh , cho thời gian bay lên đến 15 phút , bay lâu nhất trong các loại máy bay đồ chơi trên thị trường.
+                                       Các chức năng cơ bản: Điều khiển sử dụng sóng 2.4G, khoảng cách điều khiển lên đến 150m, không bị trùng...</span>
+
+                                </div>
+
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html">
+                            <img src="img/q303-q-wltoys-fpv-flycam-hd-1.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                10%
                            </span>
-                       </div>
-
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   Syma X8HW-Drone Flycam
-                               </a>
-
-                               <h4 style="color: red"> <span style="text-decoration: line-through;color: black;">2.550.000 </span><sup style="color: black">đ</sup> 2.250.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
-                                       <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.</li>
-                                   </ul>
-
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 " id="spare_parts">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi">
-                           <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
-                           <span class="discount-value" style="color: white">
-                               12%
-                           </span>
-                       </div>
+                        </div>
 
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
-                                   syma-x5hw-wifi
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">1.950.000 </span><sup style="color: black">đ</sup>1.400.000<sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
-                                           giúp người chơi biết được máy bay đang ở đâu.</li>
-                                       <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
-                                   </ul>
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <h4 style="color: black;text-transform: uppercase;padding-bottom: 20px">Máy bay trực thăng</h4>
-           <div class="row"  id="maybaytructhang">
-               <div class="col-md-4" id="droneflycam">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
-                           <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
+                                    q303-q-wltoys
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">3.100.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">3.400.000</span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <span>TÍnh năng nổi bật: FPV 5.8G: trang bị công nghệ truyền hình ảnh tự tiếp về màn hình điều khiển bằng sóng 5.8G, đảm bảo phạm vi hoạt động hơn 150m , ổn định, không giật lag, không trễ. 2.0MP HD, One Aixs gimbal: Camera HD cực nét đi kèm hệ thống gimble 1 trục giúp camera có...</span>
+                                </div>
+
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--maybaymohinh-->
+        <div id="maybaymohinh">
+            <div class="title-sanpham">
+                <a href="">
+                    Máy bay mô hình
+                </a>
+            </div>
+            <div class="subtitle-sanpham">
+                <a href="">
+                    drone&flycam
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4" id="droneflycam">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html">
+                            <img src="img/syma-x8hg-fpv-flycam-vuamohinh-14.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                15%
                            </span>
-                       </div>
-                       <!--<div class="ribbon">-->
-                       <!--<span  class="item-price">Giá:2.450.000<sup>Đ</sup></span>-->
-                       <!--</div>-->
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   vua địa hình-eadge-3
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">3.000.000 </span><sup style="color: black">đ</sup>2.450.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                       <li>Không trùng sóng,nhiễu sóng.</li>
-                                       <li>Thiết kế chắc chắn,</li>
-                                       <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                   </ul>
-                                   </li>
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4" id="helicopers">
-                   <div class="item">
-                       <a href=".html#Syma X8HW">
-                           <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#chitietsanpham/SymaX8HW.html"
+                                   title="vua địa hình-eadge-3">
+                                    <span>syma-x8hg-fpv-flycam</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2.400.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">3.000.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none">
+                                        <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
+                                        <li>Không trùng sóng,nhiễu sóng.</li>
+                                        <li>Thiết kế chắc chắn,</li>
+                                        <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
+                                    </ul>
+                                    </li>
+                                </div>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href=".html#Syma X8HW">
+                            <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                10%
                            </span>
-                       </div>
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   Syma X8HW-Drone Flycam
-                               </a>
-
-                               <h4 style="color: red"> <span style="text-decoration: line-through;color: black;">2.550.000 </span><sup style="color: black">đ</sup> 2.250.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
-                                       <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.</li>
-                                   </ul>
-
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 " id="spare_parts">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi">
-                           <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3"
+                                   title="vua địa hình-eadge-3">
+                                    Syma X8HW-Drone Flycam
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2.250.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">2.500.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <ul style="list-style:none">
+                                        <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
+                                        <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi">
+                            <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                12%
                            </span>
-                       </div>
+                        </div>
 
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
-                                   syma-x5hw-wifi
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">1.950.000 </span><sup style="color: black">đ</sup>1.400.000<sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
-                                           giúp người chơi biết được máy bay đang ở đâu.</li>
-                                       <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
-                                   </ul>
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <h4 style="color: black;text-transform: uppercase;padding-bottom: 20px">linh kiện máy tính</h4>
-           <div class="row" id="spare_parts" >
-               <div class="col-md-4" >
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3">
-                           <img src="img/sanphamnoibat/vuadiahinh_eadge_3.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/SymaX8HW.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
+                                    syma-x5hw-wifi
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">1.400.000<sup>đ</sup><span
+                                        style="text-decoration: line-through;color: grey;font-size: 17px;">1.950.000 </span><sup
+                                        style="color: grey;">đ</sup></h4>
+                                <div class="item-detail">
+                                    <p>Tính năng nổi bật:</p>
+                                    <span style="list-style:none;">
+                                        WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
+                                            giúp người chơi biết được máy bay đang ở đâu.
+                                        ALTITUDE HOLD MODE: Chức năng mới giúp
+                                    </span>
+                                </div>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle-sanpham">
+                <a href="">
+                    Máy bay trực thăng
+                </a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4" id="helicopers">
+                    <div class="item">
+                        <a href="chitietsanpham/SymaX8HW.html">
+                            <img src="img/mjx-f-series-f49-f649-2-4g-4ch-helicopter-500x500.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <!--<div class="discount-item">-->
+                        <!--<img src="img/discount-icon.png" alt="icon-discount"/>-->
+                        <!--<span class="discount-value" style="color: white">-->
+                        <!--15%-->
+                        <!--</span>-->
+                        <!--</div>-->
+
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/mjx-f-series-f49-f649-2-4g.html"
+                                   title="vua địa hình-eadge-3">
+                                    <span>mjx-f-series-f49-f649-2-4g</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">1.850.000<sup>đ</sup>
+                                    <!--<span-->
+                                    <!--style="text-decoration: line-through;color: grey;font-size: 17px;">3.000.000 </span><sup-->
+                                    <!--style="color: grey;">đ</sup>-->
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Giới thiệu sản phẩm: MJX F649 F649 là một phiên bản nâng cấp toàn diện từ chiếc F645 tiền nhiệm. Với nhiểu cải tiến đáng kể giúp gia tăng độ ổn định khi bay , đặc biệt là độ bền , chịu va đập và khả năng nâng cấp mở rộng dễ dàng . Có thể kể đến những đặc điểm nổi bật...</span>
+
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="chitietsanpham/.html#Syma X8HW">
+                            <img src="img/udi-d2-sharp-12-650003e3-ac67-43b3-9afd-38cb24201262.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                               20%
+                           </span>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="chitietsanpham/udi-d2-sharp-12.html"
+                                   title="vua địa hình-eadge-3">
+                                    <span>udi-d2-sharp-12</span>
+                                </a>
+
+                                <h4 style="color: red;font-size: 20px;">1.300.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">1.600.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    UDI D2 Sharp là loại máy bay Flybarless cao cấp, tức không cần đến thanh cân bằng
+                                    (Flybar) như các loại máy bay bình thường, cho tốc độ cao và nhào lộn kịch tính. Đặc
+                                    biệt, ngoài việc được trang bị chip cân bằng 6 chiều 6-axis GYRO , UDI D2 Sharp còn
+                                    sử dụng cảm biến gia tốc để giữ cân bằng. Như clip dưới đây, người chơi có thể cất
+                                    cánh bằng cách tung lên trời, thậm...
+
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="#chitietsanpham/">
+                            <img src="img/udi-u812-a-500x500.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                               12%
+                           </span>
+                        </div>
+
+
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#chitietsanpham" title="syma-x5hw-wifi">
+                                    <span>UDI U812 Humming Bird </span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">650.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">950.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Máy bay điều khiển U812 là máy bay thiết kế chuyên bay trong nhà, mô phỏng theo mẫu trực thăng Humming Bird của Mỹ. Video bay thử Thông tin sản phẩm: Được thiết kế bay trong nhà, kiểu dáng nhỏ nhẹ, dễ luồn lách. Bay 3 kênh với 2 tầng cánh cho độ ổn định cao. Sử dụng pin sạc, thời gian bay lên đến...</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subtitle-sanpham">
+                <a href="">
+                    linh kiện máy bay
+                </a>
+            </div>
+            <div class="row" id="spare_parts">
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="chitietsanpham/tay-dk-x600.html">
+                            <img src="img/tay-dk-x600.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
                                15%
                            </span>
-                       </div>
-                       <!--<div class="ribbon">-->
-                       <!--<span  class="item-price">Giá:2.450.000<sup>Đ</sup></span>-->
-                       <!--</div>-->
-
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   vua địa hình-eadge-3
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">3.000.000 </span><sup style="color: black">đ</sup>2.450.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Sóng 2.4G cho tầnm điều khiển ~100m.</li>
-                                       <li>Không trùng sóng,nhiễu sóng.</li>
-                                       <li>Thiết kế chắc chắn,</li>
-                                       <li>Hầm hố Motor 390 bền bỉ, tốc độ cao.</li>
-                                   </ul>
-                                   </li>
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4" id="helicopers">
-                   <div class="item">
-                       <a href=".html#Syma X8HW">
-                           <img src="img/sanphamkhuyenmai/Syma%20X8Hw.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="tay-dk-x600.html"
+                                   title="vua địa hình-eadge-3">
+                                    <span>Tay điều khiển X600</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">350.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">400.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Sản xuất tại trung quốc</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href=".html#Syma X8HW">
+                            <img src="img/pin-2s-1000-mah-x600.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
-                               10%
+                               35%
                            </span>
-                       </div>
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#vuadiahinh_eadge_3" title="vua địa hình-eadge-3">
-                                   Syma X8HW-Drone Flycam
-                               </a>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#"
+                                   title="vua địa hình-eadge-3">
+                                    <span>pin-2s-1000-mah</span>
+                                </a>
 
-                               <h4 style="color: red"> <span style="text-decoration: line-through;color: black;">2.550.000 </span><sup style="color: black">đ</sup> 2.250.000 <sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none">
-                                       <li>Altitude Hold Mode: Cho phép máy bay tự động giữ độ cao khi thả tay ga,</li>
-                                       <li>Wifi FPV Camera: chất lượng hình ảnh rõ nét hơn, khả năng lưu trữ lớn hơn.</li>
-                                   </ul>
-
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4 " id="spare_parts">
-                   <div class="item">
-                       <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi">
-                           <img src="img/sanphamnoibat/syma-x5hw-wifi-fpv-vuamohinh-7.jpg" alt="" class="img-responsive"/>
-                       </a>
-                       <div class="discount-item">
-                           <img src="img/discount-icon.png" alt="icon-discount"/>
+                                <h4 style="color: red;font-size: 20px;">100.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">150.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span> Pin sạc</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/motor-7-4v-x600.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
                            <span class="discount-value" style="color: white">
-                               12%
+                              20%
                            </span>
-                       </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#" title="syma-x5hw-wifi">
+                                    <span>motor-7-4v-x600</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">80.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">100.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Mô tơ  cực mạnh</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--xemohinh-->
+        <div id="xemohinh">
+            <div class="title-sanpham">
+                <a href="">
+                    Xe mô hình
+                </a>
+            </div>
+            <div class="subtitle-sanpham">
+                <a href="">
+                    Xe Ôtô
+                </a>
+            </div>
 
+            <div class="row" id="xeoto">
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href="chitietsanpham/Vua%20Địa%20Hình%20EADGE-3.html">
+                            <img src="img/sovran-rp-05-vuamohinh-ava.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                               15%
+                           </span>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#"
+                                   title="vua địa hình-eadge-3">
+                                    <span>sovran-rp-05</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2900.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">3.300.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Là chiếc xe cao cấp nhất trong dòng xe 1:16, chiếc Monster Truck SOVRAN 05 với trục láp, thanh giằng bằng kim loại cho độ bền ưu việt . Có thêm bánh xe con hỗ trợ phía đuôi, giúp xe bốc đầu dễ dàng mà vẫn giữ được ổn định. Thông số sản phẩm: Điều khiển sóng 2.4GHz, khoảng cách 100m, sử dụng 4 pin AA Xe dùng...</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="item">
+                        <a href=".html#Syma X8HW">
+                            <img src="img/super-racing-rp-03-vuamohinh-ava.jpg" alt="" class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                               15%
+                           </span>
+                        </div>
 
-                       <div class="info-item">
-                           <div class="item-title">
-                               <a href="Vua%20Địa%20Hình%20EADGE-3.html#syma-x5hw-wifi" title="syma-x5hw-wifi">
-                                   syma-x5hw-wifi
-                               </a>
-                               <h4 style="color: red"><span style="text-decoration: line-through;color: black;">1.950.000 </span><sup style="color: black">đ</sup>1.400.000<sup>đ</sup></h4>
-                               <div class="item-detail">
-                                   <p>Tính năng nổi bật:</p>
-                                   <ul style="list-style:none;">
-                                       <li>WIFI FPV REAL:Hình ảnh quay từ camera của máy bay sẽ
-                                           giúp người chơi biết được máy bay đang ở đâu.</li>
-                                       <li>ALTITUDE HOLD MODE: Chức năng mới giúp</li>
-                                   </ul>
-                               </div>
-                               <br>
-                               <div class="add_to-cart">
-                                   <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#"
+                                   title="vua địa hình-eadge-3">
+                                    <span>super-racing-rp</span>
+                                </a>
+
+                                <h4 style="color: red;font-size: 20px;">2.300.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">2.550.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Mang dáng dấp khí động học của một chiếc xe đua mà vẫn có vẻ hầm hố của một chiếc xe off-road , chiếc xe đua điều khiển Super Racing 03 sẽ làm thỏa mãn mọi dân ghiền tốc độ. Động cơ loại 380 đi cùng với ESC 40A tích hợp sẵn trên mainboard, giúp xe đạt tốc độ tối đa lên đến 65 Km/h . Xe được thiết kế hầm hố với gầm cao nhưng thân xe mỏng, dẹt, giúp xe có...</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/slash-rp-01-vuamohinh-ava.jpg" alt=""
+                                 class="img-responsive"/>
+                        </a>
+                        <div class="discount-item">
+                            <img src="img/discount-icon.png" alt="icon-discount"/>
+                           <span class="discount-value" style="color: white">
+                              19%
+                           </span>
+                        </div>
+                        <div class="info-item">
+                            <div class="item-title">
+                                <a href="#" title="syma-x5hw-wifi">
+                                    <span>slash-rp-01</span>
+                                </a>
+                                <h4 style="color: red;font-size: 20px;">2.200.000<sup>đ</sup>
+                                    <span
+                                            style="text-decoration: line-through;color: grey;font-size: 17px;">2.500.000 </span><sup
+                                            style="color: grey;">đ</sup>
+                                </h4>
+                                <div class="item-detail">
+                                    <span>Mang dáng dấp của một chiếc xe đua đích thực, chiếc xe đua điều khiển Slash 01 GTR cho người chơi cảm giác như đang lái một chiếc xe thật. Động cơ loại 380 đi cùng với ESC 40A tích hợp sẵn trên mainboard, giúp xe đạt tốc độ tối đa lên đến 65 Km/h (40 mph). Xe được thiết kế chuyên để Drift bởi bộ lốp nhẵn, cơ cấu truyền động 2 cầu cho phép thực hiện những cú lộn nhào vượt dốc ngoạn mục. ...</span>
+                                </div>
+                                <br>
+                                <div class="add_to-cart">
+                                    <a href="#" style="text-decoration: none;color: white">Mua Ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>
@@ -858,7 +1062,7 @@
                             <a href="mailto:phamhungbk.94@gmail.com"><i class="fa fa-2x fa-envelope-o"
                                                                         aria-hidden="true"></i></a>
                             <a href="https://www.facebook.com/PH%E1%BA%A0M-%C4%90%E1%BB%A8C-H%C3%99NG-173725786163678/">
-                                <i class="fa fa-2x fa-facebook"  style="color: #3b5998" aria-hidden="true"></i></a>
+                                <i class="fa fa-2x fa-facebook" style="color: #3b5998" aria-hidden="true"></i></a>
 
                         </li>
                         <br>
@@ -894,8 +1098,8 @@
 </div>
 </div>
 
-<script src="include/thumbnail-slider.js"></script>
-<script src="include/ninja-slider.js"></script>
+<!--<script src="include/thumbnail-slider.js"></script>-->
+<!--<script src="include/ninja-slider.js"></script>-->
 <script src="include/jquery-3.0.0.min.js"></script>
 <script src="include/bootstrap.min.js"></script>
 <script type="text/javascript" src="include/jquery.smartmenus.min.js"></script>
@@ -905,9 +1109,6 @@
 <script src="js/script.js" type="javascript">
 
 </script>
-
-<script>
-
-</script>
+<script src="js/script-sanpham.js"></script>
 </body>
 </html>
