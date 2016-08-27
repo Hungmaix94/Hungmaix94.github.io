@@ -12,8 +12,10 @@ class UploadFile
         $target_dir = "public/img/";
         $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $uploadOk = 1;
+        echo"<pre>"; var_dump(  $target_file ); echo "</pre>";
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
         if (isset($_POST["submit"])) {
+//           kiem tra anh co hay ko
             $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
             if ($check !== false) {
                 Helper::setMes("file","File is an image -" . $check['mime'] .".") ;
@@ -31,7 +33,6 @@ class UploadFile
 
         if ($_FILES["fileToUpload"]["size"] > 500000) {
             Helper::setError("file_size","Sorry, your file is too large.");
-
             $uploadOk = 0;
         }
 
@@ -39,8 +40,9 @@ class UploadFile
             && $imageFileType != "gif") {
             Helper::setError("file_type","Sorry, only JPG, JPEG, PNG & GIF files are allowed.");
             $uploadOk = 0;
-        }
 
+        }
+    
         if ($uploadOk == 0) {
             Helper::setError("file","Sorry, your file was not uploaded.");
             return false;

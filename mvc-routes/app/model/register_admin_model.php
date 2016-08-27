@@ -38,7 +38,6 @@ class register_admin_model extends base_model
         $sql = "INSERT INTO users (user_name,user_pass,user_email,created_time)
                 VALUES (:user_name,:user_pass,:user_email,:created_time)
         ";
-
         try {
             $password = password_hash($password,PASSWORD_BCRYPT);
             $this->stmt = $this->conn->prepare($sql);

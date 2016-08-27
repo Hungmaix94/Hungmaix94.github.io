@@ -3,7 +3,7 @@
     <body class="hold-transition register-page">
     <div class="register-box">
         <div class="register-logo">
-            <a href="<?php echo BASE_PATH; ?>"><b>Nghia's</b> Blog</a>
+            <a href="<?php echo BASE_PATH; ?>">Đăng kí</a>
         </div>
 
         <div class="register-box-body">
@@ -75,5 +75,5 @@
 
 <?php unset($_SESSION['error']); ?>
 <?php unset($_SESSION['mes']); ?>
-<?php unset($_SESSION['input']); ?>
+<?php //unset($_SESSION['input']); ?>
 <?php include '_admin_template/footer.php' ?>

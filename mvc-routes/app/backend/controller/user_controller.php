@@ -27,31 +27,43 @@ class user_controller extends base_controller
              
                 if(!Validation::isValidUser($_POST['username'])){
                     $flag = 0;
+
                     Helper::setError("username","Username không họp lệ");
                 }
                 if(!Validation::isValidPass($_POST['password'])){
                     $flag = 0;
+
                     Helper::setError("password","Password không họp  lệ");
                 }
 
                 if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
                     $flag = 0;
+
                     Helper::setError("email","Email không họp  lệ");
                 }
                 if($_POST['password'] != $_POST['repassword']){
                     $flag = 0;
+
                     Helper::setError("repassword","Password không khớp");
                 }
                 if(!UploadFile::checkImageFile()) {
                     $flag = 0;
+                   
+
                 }
                 
                 if($flag == 0){
-                    header("Loction:".BASE_PATH."/admin/create");
+                    header("Location:".BASE_PATH."/admin/user/create");
                 }
-                
                 $this->loadModel("user_admin");
-               
+                if($this->model->insertUser()){
+                    Helper::setMes("insert","Thêm thành công");
+                }else{
+                    Helper::setError("insert","Không thêm được");
+                }
+                $this->model->getIdUser();
+                header("Location:".BASE_PATH."/admin/user/edit");
+
             }else{
                 header("Location:".BASE_PATH."/admin/user");
             }

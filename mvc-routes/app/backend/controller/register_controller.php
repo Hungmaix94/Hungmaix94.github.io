@@ -54,17 +54,12 @@ class register_controller extends base_controller
                 Helper::setError('email', "Email khong hop le");
                 $flag = 1;
             }
-
             if ($password != $repassword) {
                 Helper::setError('repassword', "Hai mat khau khong trung nhau");
                 $flag = 1;
             }
-
-
             if ($flag == 0) {
-
                 $this->loadModel('register_admin');
-
                 if ($this->model->checkExist($username, $email)) {
                     Helper::setError('sys', 'Tài khoản hoặc Email đã tồn tại nhé con chó');
                     header("Location:" . BASE_PATH . "/admin/register");
@@ -74,14 +69,12 @@ class register_controller extends base_controller
                     if ($result) {
                         $_SESSION['admin'] = $username;
                         $_SESSION['admin_id'] = $this->model->getIdByName($username)['id'];
-                        header("Location:" . BASE_PATH . "/admin ");
+                        header("Location:" . BASE_PATH . "/admin/login");
                     } else {
                         Helper::setError('sys', 'Co gi do sai sai');
                         header("Location:" . BASE_PATH . "/admin/register");
                     }
                 }
-
-
             } else {
                 header("Location:" . BASE_PATH . "/admin/register");
             }

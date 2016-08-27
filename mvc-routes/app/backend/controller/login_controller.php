@@ -30,29 +30,33 @@ class login_controller extends base_controller
             Helper::oldInputLogin($username, $password);
             $flag = 0;
 
-//            if (!Validation::isValidUser($username)) {
-//                Helper::setError('username', " Chỉ nhận 5->17 kí tự thôi");
-//                $flag = 1;
-//            }
-//            if (!Validation::isValidPass($password)) {
-//                Helper::setError('password', 'Sai dinh dang nhe con cho');
-//                $flag = 1;
-//            }
+            if (!Validation::isValidUser($username)) {
+                Helper::setError('username', " Chỉ nhận 5->17 kí tự thôi");
+                $flag = 1;
+            }
+            if (!Validation::isValidPass($password)) {
+                Helper::setError('password', 'Sai dinh dang nhe con cho');
+                $flag = 1;
+            }
 
             if ($flag != 0) {
                 header("Location:" . BASE_PATH . "/admin/login");
             } else {
                 $this->loadModel('login_admin');
-//               
                 if ($this->model->checkLogin($username, $password)) {
-                    Helper::setMes('success', "Đăng nhập thành công");
-                    $_SESSION['admin'] = $username;
-                    $_SESSION['admin_id'] = $this->model->getIdByName($username)['id'];
-                    unset($_SESSION['input']);
-//                    unset($_SESSION['admin_id']);
-                    header("Location:" . BASE_PATH . "/admin ");
+                    if($this->model->checkConfirmed($username)){
+                        Helper::setMes('success', "Đăng nhập thành công");
+                        $_SESSION['admin'] = $username;
+                        $_SESSION['admin_id'] = $this->model->getIdByName($username)['id'];
+                        unset($_SESSION['input']);
+                        echo"<pre>"; var_dump("Đăng nhập thanh cong"); echo "</pre>";exit();
+                        header("Location:" . BASE_PATH . "/admin");
+                    }else{
+                        echo"<pre>"; var_dump("bạn phải xác thực mail"); echo "</pre>";exit();
+                    }
+                   
                 } else {
-                    Helper::setError('system', "Tài khoản mật khẩu không  đúng ");
+                    Helper::setError('system', "Tài khoản mật khẩu không  đúng");
                     header("Location:" . BASE_PATH . "/admin/login");
                 }
 

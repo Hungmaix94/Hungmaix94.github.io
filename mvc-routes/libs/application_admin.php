@@ -7,44 +7,30 @@ class application_admin
     private $action;
     private $param;
     private $request_path = array();
-
     public function __construct()
     {
         $this->request_path = $this->request_path();
         $this->splitURL();
-//        default url trỏ tới {{localhost/mvc-routes/}}admin/dashboard/view
         $controller = empty($this->controller) ? 'dashboard' : $this->controller;
         $controller = strtolower($controller)."_controller";
         $action = empty($this->action) ? 'view' : $this->action;
-        //KIEM TRA FILE CONTROLLER TUONG UNG CO TON TAI HAY KHONG?
         if (!file_exists(PATH_APPLICATION . "/backend/controller/".$controller.".php")){
-//            header("Location:".BASE_PATH."/p404");
             die("Controller not found");
         }
-//        TON TAI THI KHAI BAO FILE CONTROLLER TUONG UNG VOI URL
         require PATH_APPLICATION."/backend/controller/".$controller.".php";
-        // KIEM TRA XEM CLASS TUONG UNG TRONG CONTROLLER CO TON TAI HAY KHONG?
         $controllerObj = new $controller();
         if(!class_exists($controller)){
-//            header("Location:".BASE_PATH."/p404");
         die("class controller not found");
     }
-//        echo"<pre>"; var_dump($controller); echo "</pre>";exit();
-//        echo"<pre>"; var_dump($action); echo "</pre>";exit();
-//        echo"<pre>"; var_dump($this->param); echo "</pre>";exit();
-//        KIEM TRA XEM METHOD TRONG CONTROLLER TUONG UNG CO TON TAI HAY KHONG?
         if(method_exists($controller,$action)){
             if(!empty($this->param)){
-//                NEU CO TRUYEN VAO PARAM THI GOI DEN METHOD $CONTROLLER->ACTION($PARAM)
                 call_user_func_array(array($controllerObj,$action), $this->param);
             }else{
-//                NEU KHONG CO PARAM THI GOI DEN METHOD ACTION KO PARAM
-
                 $controllerObj->{$action}();
             }
         }else{
             die("Method not found");
-//            header("Location:".BASE_PATH."/p404");
+
         }
 
 

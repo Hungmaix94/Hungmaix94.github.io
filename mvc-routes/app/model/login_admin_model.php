@@ -9,7 +9,17 @@
 class login_admin_model extends base_model
 {
     private $table = 'users';
+    public function checkVerify($username){
+        $sql = "SELECT confirmed FROM user WHERE name = ?";
+        try{
+            $this->stmt = $this->conn->prepare($sql);
+            $this->stmt->bindParam(1,$username);
+            $this->stmt->execute();
+        }catch (PDOException $e){
 
+        }
+        return $this->stmt->fetch();
+    }
     public function checkLogin($user, $pass)
     {
         $sql = " SELECT user_pass FROM " . $this->table . " WHERE user_name = ?";

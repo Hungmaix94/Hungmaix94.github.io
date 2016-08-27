@@ -3,7 +3,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="<?php echo BASE_PATH ; ?>"><b>Hung</b>' Blog</a>
+    <a href="<?php echo BASE_PATH ; ?>">Đăng nhập</a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
@@ -52,8 +52,8 @@
     </form>
 
 
-<!--    <a href="#">I forgot my password</a><br>-->
-    <a href="<?php echo BASE_PATH; ?>/admin/register" class="text-center">Tạo tài khoản!</a>
+    <a href="<?php echo BASE_PATH; ?>/admin/password/viewResetPass">Quên mật khẩu</a><br>
+    <a href="<?php echo BASE_PATH; ?>/admin/register" class="text-center">Đăng ký</a>
 
   </div>
   <!-- /.login-box-body -->
